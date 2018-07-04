@@ -4,6 +4,8 @@
 // https://docs.particle.io/reference/firmware/electron/#setcredentials-
 STARTUP(cellular_credentials_set("eseye.com", "user", "pass", NULL));
 
+SerialLogHandler logHandler(LOG_LEVEL_TRACE);
+
 /* Function prototypes -------------------------------------------------------*/
 int tinkerDigitalRead(String pin);
 int tinkerDigitalWrite(String command);
